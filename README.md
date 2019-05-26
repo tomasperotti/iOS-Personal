@@ -1,2 +1,3 @@
-# Swift-iOS-Personal
-This repository contains personal projects used to develop skills in Swift.
+# iOS-Personal
+This repository is for personal usage and training. 
+

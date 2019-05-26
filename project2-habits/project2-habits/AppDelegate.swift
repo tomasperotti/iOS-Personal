@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias App = AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let userLoggedIn = true // Check from UserDefaults or related web service
+        
+        if (userLoggedIn) {
+            // Show the home page
+        } else {
+            // Show the login page
+        }
+        
         return true
     }
 

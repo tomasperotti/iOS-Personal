@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B00084A22985513006AF629 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00084922985513006AF629 /* AuthViewController.swift */; };
+		8B00084C22985BDC006AF629 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B00084B22985BDC006AF629 /* Extensions.swift */; };
 		8B537D452295BAF20084CD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B537D442295BAF20084CD81 /* AppDelegate.swift */; };
 		8B537D472295BAF20084CD81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B537D462295BAF20084CD81 /* ViewController.swift */; };
 		8B537D4A2295BAF20084CD81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B537D482295BAF20084CD81 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B00084922985513006AF629 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8B00084B22985BDC006AF629 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B537D412295BAF20084CD81 /* project2-habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project2-habits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B537D442295BAF20084CD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B537D462295BAF20084CD81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				8B537D4B2295BAF40084CD81 /* Assets.xcassets */,
 				8B537D4D2295BAF40084CD81 /* LaunchScreen.storyboard */,
 				8B537D502295BAF40084CD81 /* Info.plist */,
+				8B00084922985513006AF629 /* AuthViewController.swift */,
+				8B00084B22985BDC006AF629 /* Extensions.swift */,
 			);
 			path = "project2-habits";
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B537D472295BAF20084CD81 /* ViewController.swift in Sources */,
+				8B00084A22985513006AF629 /* AuthViewController.swift in Sources */,
 				8B537D452295BAF20084CD81 /* AppDelegate.swift in Sources */,
+				8B00084C22985BDC006AF629 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,21 +10,28 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
+    @IBOutlet var emailField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func signIn() {
+        // 1
+        view.endEditing(true)
+        
+        // 2
+        guard let email = emailField.text, email.count > 0 else {
+            return
+        }
+        guard let password = passwordField.text, password.count > 0 else {
+            return
+        }
+        
+        // 3
+        let name = UIDevice.current.name
+      //  let user = User(name: name, email: email)
     }
-    */
 
 }
