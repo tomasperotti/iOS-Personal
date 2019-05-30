@@ -1,0 +1,6 @@
+framework module Pods_project3_tracker {
+  umbrella header "Pods-project3-tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zAa-UV-llX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="trq-io-UWd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,144 +10,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project2_habits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AuthViewController" customModule="project2_habits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aN9-J2-Uug"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-145" y="121"/>
+            <point key="canvasLocation" x="1503.2" y="62.518740629685162"/>
         </scene>
-        <!--Auth View Controller-->
-        <scene sceneID="1pn-yZ-Cdb">
+        <!--Navigation Controller-->
+        <scene sceneID="h8A-Qd-yv6">
             <objects>
-                <viewController id="zAa-UV-llX" customClass="AuthViewController" customModule="project2_habits" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BEp-UV-r0P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background login" translatesAutoresizingMaskIntoConstraints="NO" id="3SS-w3-Gl3">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-zq-Omi" customClass="CustomTextField" customModule="project2_habits" customModuleProvider="target">
-                                <rect key="frame" x="62" y="307" width="251" height="33"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="JcT-9t-CF7"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-6d-FOI" customClass="CustomTextField" customModule="project2_habits" customModuleProvider="target">
-                                <rect key="frame" x="62" y="254" width="251" height="33"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="OwI-9f-mKc"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="mail"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVP-QC-PEF" customClass="CustomButton" customModule="project2_habits" customModuleProvider="target">
-                                <rect key="frame" x="62" y="572" width="251" height="32"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Sign In"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="habit" translatesAutoresizingMaskIntoConstraints="NO" id="KXU-4E-4Nf">
-                                <rect key="frame" x="62" y="82" width="251" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="WP1-Zi-mqV"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hZb-6d-FOI" firstAttribute="trailing" secondItem="Qcn-zq-Omi" secondAttribute="trailing" id="1iH-O4-ulB"/>
-                            <constraint firstItem="Qcn-zq-Omi" firstAttribute="top" secondItem="hZb-6d-FOI" secondAttribute="bottom" constant="20" id="6he-p2-xd0"/>
-                            <constraint firstItem="Qcn-zq-Omi" firstAttribute="trailing" secondItem="DVP-QC-PEF" secondAttribute="trailing" id="8px-c5-W2H"/>
-                            <constraint firstAttribute="trailing" secondItem="3SS-w3-Gl3" secondAttribute="trailing" id="D5P-zy-PO9"/>
-                            <constraint firstItem="KXU-4E-4Nf" firstAttribute="top" secondItem="s2i-1R-uBC" secondAttribute="top" constant="62" id="Tpu-c7-kCw"/>
-                            <constraint firstItem="3SS-w3-Gl3" firstAttribute="centerX" secondItem="KXU-4E-4Nf" secondAttribute="centerX" id="WIy-yI-RpG"/>
-                            <constraint firstItem="hZb-6d-FOI" firstAttribute="top" secondItem="KXU-4E-4Nf" secondAttribute="bottom" constant="44" id="XjU-Xq-NFH"/>
-                            <constraint firstItem="KXU-4E-4Nf" firstAttribute="trailing" secondItem="hZb-6d-FOI" secondAttribute="trailing" id="Yce-Td-Hdm"/>
-                            <constraint firstItem="KXU-4E-4Nf" firstAttribute="leading" secondItem="hZb-6d-FOI" secondAttribute="leading" id="aYs-nD-te4"/>
-                            <constraint firstItem="3SS-w3-Gl3" firstAttribute="bottom" secondItem="s2i-1R-uBC" secondAttribute="bottom" id="d9M-Rg-r5V"/>
-                            <constraint firstItem="Qcn-zq-Omi" firstAttribute="leading" secondItem="DVP-QC-PEF" secondAttribute="leading" id="f1e-lf-isl"/>
-                            <constraint firstItem="hZb-6d-FOI" firstAttribute="leading" secondItem="Qcn-zq-Omi" secondAttribute="leading" id="fmM-2L-yAs"/>
-                            <constraint firstItem="3SS-w3-Gl3" firstAttribute="top" secondItem="s2i-1R-uBC" secondAttribute="top" id="kU3-VR-ZEC"/>
-                            <constraint firstItem="KXU-4E-4Nf" firstAttribute="leading" secondItem="s2i-1R-uBC" secondAttribute="leading" constant="62" id="kV8-Bf-TLo"/>
-                            <constraint firstItem="s2i-1R-uBC" firstAttribute="bottom" secondItem="DVP-QC-PEF" secondAttribute="bottom" constant="63" id="pGf-ec-u1f"/>
-                            <constraint firstItem="3SS-w3-Gl3" firstAttribute="leading" secondItem="BEp-UV-r0P" secondAttribute="leading" id="sCX-ZW-knP"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="s2i-1R-uBC"/>
-                    </view>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="trq-io-UWd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xgq-8x-TRJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="emailField" destination="hZb-6d-FOI" id="yNu-kg-snb"/>
-                        <outlet property="passwordField" destination="Qcn-zq-Omi" id="KAh-wz-NuL"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ec7-VA-513"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iur-Ir-iZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oij-z6-uoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.60000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="564" y="62.518740629685162"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="background login" width="750" height="1334"/>
-        <image name="habit" width="491.51998901367188" height="491.51998901367188"/>
-        <image name="mail" width="15" height="15"/>
-        <image name="password" width="15" height="15"/>
-    </resources>
 </document>
